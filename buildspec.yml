@@ -6,6 +6,7 @@ phases:
       nodejs: 12
     commands:
       - nvidia-smi
+      - apt list --installed
   pre_build:
     commands:
       - echo prebuild
