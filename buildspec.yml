@@ -9,7 +9,7 @@ phases:
       - apt list --installed
   pre_build:
     commands:
-      - echo prebuild
+      - npm i
   build:
     commands:
       - node index.js
