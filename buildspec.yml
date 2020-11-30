@@ -12,7 +12,7 @@ phases:
       - echo prebuild
   build:
     commands:
-      - echo build
+      - node index.js
 artifacts:
   files:
     - output.pdf
