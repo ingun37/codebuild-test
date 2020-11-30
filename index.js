@@ -8,7 +8,7 @@ const dirPath = path.dirname(binPath)
 const libPath = path.resolve(dirPath, "libEGL.so")
 
 puppeteer.launch({
-    headless: false,
+    // headless: false,
     args: ["--no-sandbox", "--disable-web-security"],
 }).then(browser => {
     return browser.newPage().then(page=>{
