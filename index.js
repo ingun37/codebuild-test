@@ -4,7 +4,7 @@ const fs = require("fs");
 const { execFileSync } = require('child_process');
 const binPath = puppeteer.executablePath()
 
-execFileSync(binPath, ["--no-sandbox", "--headless", "--use-gl=egl", "--print-to-pdf", "chrome://gpu"])
+execFileSync(binPath, ["--no-sandbox", "--headless", "--use-gl=egl", "--print-to-pdf", "--enable-logging=stderr", "--v=999", "chrome://gpu"])
 
 // const dirPath = path.dirname(binPath)
 // const libPath = path.resolve(dirPath, "libEGL.so")
