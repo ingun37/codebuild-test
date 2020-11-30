@@ -13,3 +13,6 @@ phases:
   build:
     commands:
       - echo build
+artifacts:
+  files:
+    - output.pdf
