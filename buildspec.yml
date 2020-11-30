@@ -16,7 +16,7 @@ phases:
       - npm i
   build:
     commands:
-      - export DBUS_SYSTEM_BUS_ADDRESS=$DBUS_SESSION_BUS_ADDRESS && dbus-run-session -- node index.js
+      - dbus-run-session -- bash -c 'DBUS_SYSTEM_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS" node index.js'  
 artifacts:
   files:
     - output.pdf
