@@ -7,15 +7,16 @@ phases:
     commands:
       - apt-get update -y
       - apt-get install -y dbus libgles2
+      - apt-get install -y libnss3 libatk-adaptor libx11-xcb-dev libcups2 libxkbcommon-dev libxcomposite-dev libxdamage-dev libxrandr-dev libgtk-3-0 libgbm-dev libasound2
       - nvidia-smi
       - apt list --installed
   pre_build:
     commands:
       # - /etc/init.d/dbus start
-      - dbus-run-session -- npm i
+      - npm i
   build:
     commands:
-      - node index.js
+      - dbus-run-session -- node index.js
 artifacts:
   files:
     - output.pdf
