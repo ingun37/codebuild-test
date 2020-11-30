@@ -7,7 +7,7 @@ phases:
     commands:
       - nvidia-smi
       - apt list --installed
-      - apt-get install -y libgles2-mesa
+      - apt-get install -y libgles2
   pre_build:
     commands:
       - npm i
