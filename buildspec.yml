@@ -8,9 +8,10 @@ phases:
       nodejs: 12
     commands:
       - apt-get update -y
-      - apt-get install -y libgles2
+      - apt-get install -y dbus-x11 libgles2
       - nvidia-smi
       - apt list --installed
+      - eval `dbul-launch`
   pre_build:
     commands:
       # - /etc/init.d/dbus start
