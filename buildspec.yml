@@ -1,21 +1,18 @@
 version: 0.2
-env:
-  variables:
-    DBUS_SYSTEM_BUS_ADDRESS: unix:path=/host/run/dbus/system_bus_socket
+
 phases:
   install:
     runtime-versions:
       nodejs: 12
     commands:
       - apt-get update -y
-      - apt-get install -y dbus-x11 libgles2
+      - apt-get install -y dbus libgles2
       - nvidia-smi
       - apt list --installed
-      - eval `dbul-launch`
   pre_build:
     commands:
       # - /etc/init.d/dbus start
-      - npm i
+      - dbus-run-session -- npm i
   build:
     commands:
       - node index.js
