@@ -8,7 +8,7 @@ phases:
       - apt-get update -y
       - nvidia-smi
       - apt list --installed
-      - apt-get install -y libgles2
+      - apt-get install -y dbus libgles2
   pre_build:
     commands:
       - npm i
