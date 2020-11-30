@@ -1,0 +1,23 @@
+{
+  "name": "codebuild-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingun37/codebuild-test.git"
+  },
+  "keywords": [],
+  "author": "Ingun Jon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingun37/codebuild-test/issues"
+  },
+  "homepage": "https://github.com/ingun37/codebuild-test#readme",
+  "devDependencies": {
+    "puppeteer": "^5.4.0"
+  }
+}
