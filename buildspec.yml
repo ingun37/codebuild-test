@@ -5,18 +5,20 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-      - apt-get update -y
-      - apt-get install -y dbus libgles2
-      - apt-get install -y libnss3 libatk-adaptor libx11-xcb-dev libcups2 libxkbcommon-dev libxcomposite-dev libxdamage-dev libxrandr-dev libgtk-3-0 libgbm-dev libasound2
-      - nvidia-smi
-      - apt list --installed
+      - echo "install"
+      # - apt-get update -y
+      # - apt-get install -y dbus libgles2
+      # - apt-get install -y libnss3 libatk-adaptor libx11-xcb-dev libcups2 libxkbcommon-dev libxcomposite-dev libxdamage-dev libxrandr-dev libgtk-3-0 libgbm-dev libasound2
+      # - nvidia-smi
+      # - apt list --installed
   pre_build:
     commands:
+      - echo "pre_build"
       # - /etc/init.d/dbus start
-      - npm i
-  build:
-    commands:
-      - dbus-run-session -- bash -c 'DBUS_SYSTEM_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS" node index.js'  
+      # - npm i
+  # build:
+  #   commands:
+  #     - dbus-run-session -- bash -c 'DBUS_SYSTEM_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS" node index.js'  
 artifacts:
   files:
-    - output.pdf
+    - closet.viewer.js
