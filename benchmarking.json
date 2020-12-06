@@ -10,7 +10,6 @@
   "SecurityGroupId": "sg-0b84b2a5d1dd165b7",
   "ZrestBenchmarkerVersion": "1.2.0",
   "BootCommands" : [
-    "shutdown -h +30",
     "apt-get install linux-headers-$(uname -r)",
     "distribution=$(. /etc/os-release;echo $ID$VERSION_ID | sed -e 's/\\.//g')",
     "wget https://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64/cuda-$distribution.pin",
