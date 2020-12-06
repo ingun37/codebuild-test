@@ -1,11 +1,12 @@
 {
-  "APIURL": "https://sample.com",
-  "LibraryURL": "https://sample.com",
-  "ZrestURLs": ["https://sample.com"],
-  "TableName": "sample",
-  "InstanceImageId": "sample",
-  "InstanceType": "sample",
-  "InstanceKeyName": "sample",
-  "SubnetID": "sample",
-  "SecurityGroupId": "sample"
+  "APIURL": "https://e9mtlzmh19.execute-api.ap-northeast-2.amazonaws.com/develop",
+  "LibraryURL": "https://viewer-library.s3.ap-northeast-2.amazonaws.com/closet.viewer.js",
+  "ZrestURLs": ["https://zrest-free-sample.s3.ap-northeast-2.amazonaws.com/7438d-o.dudu8u.zrest"],
+  "TableName": "ClosetViewerMetric",
+  "InstanceImageId": "ami-07e004f63a0cccdd3",
+  "InstanceType": "p2.xlarge",
+  "InstanceKeyName": "viewer",
+  "SubnetID": "subnet-0d46ec7595dff8efe",
+  "SecurityGroupId": "sg-0b84b2a5d1dd165b7",
+  "ZrestBenchmarkerVersion": "1.2.0"
 }
