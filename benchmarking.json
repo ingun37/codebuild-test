@@ -1,0 +1,11 @@
+{
+  "APIURL": "https://sample.com",
+  "LibraryURL": "https://sample.com",
+  "ZrestURLs": ["https://sample.com"],
+  "TableName": "sample",
+  "InstanceImageId": "sample",
+  "InstanceType": "sample",
+  "InstanceKeyName": "sample",
+  "SubnetID": "sample",
+  "SecurityGroupId": "sample"
+}
