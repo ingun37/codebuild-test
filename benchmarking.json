@@ -1,14 +1,11 @@
 {
-  "APIURL": "https://e9mtlzmh19.execute-api.ap-northeast-2.amazonaws.com/develop",
-  "LibraryURL": "https://viewer-library.s3.ap-northeast-2.amazonaws.com/closet.viewer-turn.js",
-  "ZrestURLs": ["https://zrest-free-sample.s3.ap-northeast-2.amazonaws.com/7438d-o.dudu8u.zrest"],
-  "TableName": "ClosetViewerMetric",
+
   "InstanceImageId": "ami-007b7745d0725de95",
   "InstanceType": "g4dn.xlarge",
   "InstanceKeyName": "viewer",
   "SubnetID": "subnet-0d46ec7595dff8efe",
   "SecurityGroupId": "sg-0b84b2a5d1dd165b7",
-  "ZrestBenchmarkerVersion": "1.2.0",
+  "ZrestBenchmarkerVersion": "1.3.0",
   "BootCommands" : [
     "apt-get install linux-headers-$(uname -r)",
     "distribution=$(. /etc/os-release;echo $ID$VERSION_ID | sed -e 's/\\.//g')",
@@ -21,5 +18,11 @@
     "apt-get install -y libnss3 libatk-adaptor libx11-xcb-dev libcups2 libxkbcommon-dev libxcomposite-dev libxdamage-dev libxrandr-dev libgtk-3-0 libgbm1 libgbm-dev libasound2",
     "snap install node --classic --channel=12",
     "nvidia-smi"
+  ],
+  "ZrestBenchmarkerArguments": [
+    "-a \"https://e9mtlzmh19.execute-api.ap-northeast-2.amazonaws.com/develop\"",
+    "-t ClosetViewerMetric",
+    "-z https://zrest-free-sample.s3.ap-northeast-2.amazonaws.com/7438d-o.dudu8u.zrest",
+    "--heavy-zrest \"https://viewer-test-model.s3.ap-northeast-2.amazonaws.com/heavy.zrest\""
   ]
 }
