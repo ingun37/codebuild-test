@@ -1,6 +1,6 @@
 {
   "APIURL": "https://e9mtlzmh19.execute-api.ap-northeast-2.amazonaws.com/develop",
-  "LibraryURL": "https://viewer-library.s3.ap-northeast-2.amazonaws.com/closet.viewer.js",
+  "LibraryURL": "https://viewer-library.s3.ap-northeast-2.amazonaws.com/closet.viewer-turn.js",
   "ZrestURLs": ["https://zrest-free-sample.s3.ap-northeast-2.amazonaws.com/7438d-o.dudu8u.zrest"],
   "TableName": "ClosetViewerMetric",
   "InstanceImageId": "ami-007b7745d0725de95",
